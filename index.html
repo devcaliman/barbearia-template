@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Império</title>
+
+  <!-- fonte chiquezinha, nao arranca isso daqui do nada nao kkkkk se nao fica feio p cacete -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- css principal, se mudar esse caminho errado o site vira uma tristeza pura kkkkk -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- navbar/topo: nome + logo + menu. mexe aqui com carinho pq se entortar isso a porra toda desmonta -->
+  <header>
+    <div class="brand">
+      <h1>Barbearia Império</h1>
+      <p>Estilo, presença e tradição</p>
+    </div>
+
+    <div class="logo-barbearia">
+      <img src="images/logo.png" alt="Logo da barbearia">
+    </div>
+
+    <!-- os href tem que bater com os id das seções, senao tu clica e nao vai pra lugar nenhum KKK -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#endereco">Endereço</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero/banner principal. NAO troca o id da img sem ajustar o js tbm, se nao para de trocar e vc acha q o pc ta possuido -->
+  <section class="hero" id="inicio">
+    <img id="imagem-hero" src="images/banner1.png" alt="Barbearia">
+    <div class="hero-overlay">
+      <h2>Cortes modernos com atendimento de respeito</h2>
+      <p>Agende seu horário e viva a experiência de uma barbearia premium</p>
+      <a href="https://wa.me/5511999999999" target="_blank" class="btn-principal">Agendar pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- serviços: essa parte vende viu, aqui o cliente bate o olho e pensa "hummm gostei dessa merda" -->
+  <section id="servicos" class="secao">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <p class="subtitulo">Serviços pensados para valorizar seu estilo</p>
+
+      <!-- quer add mais serviço? copia um article inteiro e troca as info, sem medo e sem inventar moda -->
+      <div class="grid-cards">
+        <article class="card">
+          <img src="images/corte.png" alt="Corte masculino">
+          <div class="card-body">
+            <h3>Corte Masculino</h3>
+            <p>Visual alinhado com acabamento profissional.</p>
+            <span>R$ 35,00</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/barba.png" alt="Barba">
+          <div class="card-body">
+            <h3>Barba</h3>
+            <p>Modelagem, acabamento e cuidado completo.</p>
+            <span>R$ 25,00</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/combo.png" alt="Corte e barba">
+          <div class="card-body">
+            <h3>Corte + Barba</h3>
+            <p>O combo ideal para sair no estilo.</p>
+            <span>R$ 50,00</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/sobrancelha.png" alt="Sobrancelha">
+          <div class="card-body">
+            <h3>Sobrancelha</h3>
+            <p>Detalhes que fazem diferença no visual.</p>
+            <span>R$ 10,00</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- sobre: ajuda a dar uma moral pra marca, deixa com cara de negocio serio memo -->
+  <section id="sobre" class="secao destaque">
+    <div class="container sobre-grid">
+      <div>
+        <h2>Sobre a Barbearia</h2>
+        <p>
+          A Barbearia Império une tradição, modernidade e atendimento de qualidade.
+          Nosso foco é entregar estilo, conforto e confiança em cada atendimento.
+        </p>
+      </div>
+      <div>
+        <img src="images/sobre.png" alt="Interior da barbearia" class="img-sobre">
+      </div>
+    </div>
+  </section>
+
+  <!-- galeria: aqui tu bota foto bonita, pq foto ruim fode a apresentação toda kkkkk -->
+  <section id="galeria" class="secao">
+    <div class="container">
+      <h2>Galeria</h2>
+      <p class="subtitulo">Conheça nosso espaço e alguns estilos</p>
+
+      <div class="galeria-grid">
+        <img src="images/galeria1.png" alt="Foto 1 da barbearia">
+        <img src="images/galeria2.png" alt="Foto 2 da barbearia">
+        <img src="images/galeria3.png" alt="Foto 3 da barbearia">
+        <img src="images/galeria4.png" alt="Foto 4 da barbearia">
+      </div>
+    </div>
+  </section>
+
+  <!-- contato: uma das partes mais importante, pq sem isso o cara gosta e depois nao sabe nem onde chamar kkkkk -->
+  <section id="contato" class="secao contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p class="subtitulo">Fale com a nossa equipe</p>
+
+      <div class="contato-box">
+        <div class="info-box">
+          <h3>Informações</h3>
+          <p><strong>WhatsApp:</strong> (11) 99999-9999</p>
+          <p><strong>Instagram:</strong> @barbeariaimperio</p>
+          <p><strong>Horário:</strong> Seg a Sáb - 09h às 20h</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Agendamento</h3>
+          <p>Agende seu horário de forma rápida e prática pelo WhatsApp.</p>
+          <a href="https://wa.me/5511999999999" target="_blank" class="btn-principal">Agendar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- endereço/mapa: se trocar esse iframe errado, o cabra vai parar em outro planeta ao inves da barbearia KKKKK -->
+  <section id="endereco" class="secao">
+    <div class="container">
+      <h2>Nosso Endereço</h2>
+      <p class="subtitulo">Venha nos visitar</p>
+
+      <div class="endereco-simples">
+        <div class="info-box">
+          <h3>Localização</h3>
+          <p><strong>Rua Exemplo, 456</strong></p>
+          <p>Centro - Sua Cidade / SP</p>
+          <p>CEP: 00000-000</p>
+
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps?q=São%20Paulo&output=embed"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Barbearia Império - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- script do banner. nao apaga isso achando q é enfeite nao, senao a budega para de funcionar rsrs -->
+  <script src="js/script.js"></script>
+</body>
+</html>
