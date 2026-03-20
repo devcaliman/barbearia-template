@@ -297,7 +297,27 @@ footer {
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
+    padding: 15px 10px;
+  }
+
+  .brand {
+    text-align: center;
+  }
+
+  .brand h1 {
+    font-size: 1.6rem; 
+    margin-bottom: 0;
+  }
+
+  .brand p {
+    margin: 0; 
+    font-size: 0.8rem;
+  }
+
+  .logo-barbearia img {
+    width: 60px; 
+    height: 60px;
   }
 
   .grid-cards,
@@ -315,6 +335,7 @@ footer {
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
   }
 
   .hero {
