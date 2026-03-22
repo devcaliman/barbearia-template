@@ -146,6 +146,20 @@
           <p>Agende seu horário de forma rápida e prática pelo WhatsApp.</p>
           <a href="https://wa.me/5511999999999" target="_blank" class="btn-principal">Agendar agora</a>
         </div>
+        
+  <!--e o formulario-->
+      </div class="info-box">
+        <h3>Em via uma Mensagem</h3>
+
+          <form id="form">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder=" Seu email" required>
+            <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit"
+            class="btn-principal">
+          </button>
+         </form>
       </div>
     </div>
   </section>
@@ -186,5 +200,21 @@
 
   <!-- script do banner. nao apaga isso achando q é enfeite nao, senao a budega para de funcionar rsrs -->
   <script src="js/script.js"></script>
+
+  <!-- outro script que se apager e F kkkk ele e iportante pro email-JS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  
+  <script>
+    (function(){emailjs.init("-8pwrimuIaDQHe8cd");})();
+      document.getElementById("form").addEventListener ("submit", function(e) 
+      { e.preventDefault();
+
+      emailj.sandform("service_kl22xtk", "template_w1wpkxc", this).then(function() {
+     alert("Mensagem enviada com sucesso!");
+     }, function(error) { alert("Error ao enviar"); console.log(error)
+       });
+     });
+  </script> 
+
 </body>
 </html>
