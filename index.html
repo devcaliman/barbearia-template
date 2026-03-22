@@ -148,17 +148,15 @@
         </div>
         
   <!--e o formulario-->
-      </div class="info-box">
-        <h3>Em via uma Mensagem</h3>
+      <div class="info-box">
+        <h3>Envie uma Mensagem</h3>
 
           <form id="form">
             <input type="text" name="nome" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder=" Seu email" required>
+            <input type="email" name="email" placeholder="Seu email" required>
             <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
 
-            <button type="submit"
-            class="btn-principal">
-          </button>
+            <button type="submit" class="btn-principal">A gendar agora</button>
          </form>
       </div>
     </div>
@@ -209,7 +207,7 @@
       document.getElementById("form").addEventListener ("submit", function(e) 
       { e.preventDefault();
 
-      emailj.sandform("service_kl22xtk", "template_w1wpkxc", this).then(function() {
+      emailj.SendForm("service_kl22xtk", "template_w1wpkxc", this).then(function() {
      alert("Mensagem enviada com sucesso!");
      }, function(error) { alert("Error ao enviar"); console.log(error)
        });
