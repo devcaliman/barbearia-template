@@ -156,7 +156,7 @@
             <input type="email" name="email" placeholder="Seu email" required>
             <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
 
-            <button type="submit" class="btn-principal">A gendar agora</button>
+            <button type="submit" class="btn-principal">Agendar agora</button>
          </form>
       </div>
     </div>
@@ -207,7 +207,7 @@
       document.getElementById("form").addEventListener ("submit", function(e) 
       { e.preventDefault();
 
-      emailj.SendForm("service_kl22xtk", "template_w1wpkxc", this).then(function() {
+      emailjs.sendForm("service_kl22xtk", "template_w1wpkxc", this).then(function() {
      alert("Mensagem enviada com sucesso!");
      }, function(error) { alert("Error ao enviar"); console.log(error)
        });
